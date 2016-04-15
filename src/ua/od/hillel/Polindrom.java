@@ -29,9 +29,7 @@ public class Polindrom {
         char[] tempword = word.toCharArray();
         String first = "", second = "";
         int charInWordHalf = charInWord / 2;
-        for (int i = 0; i < charInWordHalf; i++) {
-            first = first + String.valueOf(tempword[i]);
-        }
+        first = word.substring(0, charInWordHalf);
         if (sumChar == 1) {
             for (int i = charInWord - 1; i > charInWordHalf; i--) {
                 second = second + String.valueOf(tempword[i]);
