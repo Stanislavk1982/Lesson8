@@ -30,15 +30,13 @@ public class Polindrom {
         String first = "", second = "";
         int charInWordHalf = charInWord / 2;
         first = word.substring(0, charInWordHalf);
-        if (sumChar == 1) {
+        if (sumChar == 0) {
+        charInWordHalf--;
+        }
+
             for (int i = charInWord - 1; i > charInWordHalf; i--) {
                 second = second + String.valueOf(tempword[i]);
             }
-        } else {
-            for (int i = charInWord - 1; i > charInWordHalf - 1; i--) {
-                second = second + String.valueOf(tempword[i]);
-            }
-        }
 
         if (first.equals(second)) {
             System.out.println("The palindrom: " + word);
