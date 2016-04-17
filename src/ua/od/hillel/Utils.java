@@ -6,7 +6,7 @@ package ua.od.hillel;
 public class Utils {
     public static void Print_array(String[] args) {
         System.out.println("The string with abbreviated words:");
-        for (int i=0; i<args.length; i++)
-            System.out.print(" "+args[i]);
+        for (int i = 0; i < args.length; i++)
+            System.out.print(" " + args[i]);
     }
 }

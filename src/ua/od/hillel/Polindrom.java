@@ -31,12 +31,12 @@ public class Polindrom {
         int charInWordHalf = charInWord / 2;
         first = word.substring(0, charInWordHalf);
         if (sumChar == 0) {
-        charInWordHalf--;
+            charInWordHalf--;
         }
 
-            for (int i = charInWord - 1; i > charInWordHalf; i--) {
-                second = second + String.valueOf(tempword[i]);
-            }
+        for (int i = charInWord - 1; i > charInWordHalf; i--) {
+            second = second + String.valueOf(tempword[i]);
+        }
 
         if (first.equals(second)) {
             System.out.println("The palindrom: " + word);
